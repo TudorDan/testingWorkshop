@@ -14,8 +14,8 @@ public class DummyTest {
     @Test
     public void demoDummy() {
         BookRepository bookRepository = new FakeBookRepository();
-        EmailService emailService = new DummyEmailService();
-        BookService bookService = new BookService(bookRepository, emailService);
+        EmailService emailServiceDummy = new DummyEmailService();
+        BookService bookService = new BookService(bookRepository, emailServiceDummy);
 
         bookService.addBook(new Book("1234", "Testing in Action", 250, LocalDate.now()));
         bookService.addBook(new Book("1235", "JUnit in Action", 200, LocalDate.now()));
