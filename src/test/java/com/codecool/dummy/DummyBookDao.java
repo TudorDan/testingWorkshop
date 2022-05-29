@@ -1,13 +1,10 @@
 package com.codecool.dummy;
 
-import com.codecool.dummy.Book;
-import com.codecool.dummy.BookRepository;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FakeBookRepository implements BookRepository {
+public class DummyBookDao implements BookDao {
     // In memory db, HashMap or List
     Map<String, Book> bookStore = new HashMap<>();
 

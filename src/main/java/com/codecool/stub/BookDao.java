@@ -1,9 +1,8 @@
 package com.codecool.stub;
 
-import java.util.Collection;
 import java.util.List;
 
-public interface BookRepository {
+public interface BookDao {
 
     List<Book> findNewBooks(int days);
 }
