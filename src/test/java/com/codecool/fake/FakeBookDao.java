@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FakeBookRepository implements BookRepository {
+public class FakeBookDao implements BookDao {
     // In memory db, HashMap or List
     Map<String, Book> bookStore = new HashMap<>();
 

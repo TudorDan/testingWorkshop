@@ -1,17 +1,17 @@
 package com.codecool.fake;
 
 public class BookService {
-    private final BookRepository bookRepository;
+    private final BookDao bookDao;
 
-    public BookService(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
+    public BookService(BookDao bookDao) {
+        this.bookDao = bookDao;
     }
 
     public void addBook(Book book){
-        bookRepository.save(book);
+        bookDao.save(book);
     }
 
     public int findNumberOfBooks(){
-        return bookRepository.findAll().size();
+        return bookDao.findAll().size();
     }
 }
