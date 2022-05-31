@@ -1,5 +1,8 @@
-package com.annotations;
+package com.annotations.support;
 
+import com.annotations.support.Book;
+import com.annotations.support.BookDao;
+import com.annotations.support.BookService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
