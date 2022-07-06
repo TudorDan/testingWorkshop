@@ -26,7 +26,7 @@ public class BookManagerTest {
         // We need to call getAppliedDiscount to calculate the discounted price
         Book book = new Book("1234", "Mockito in Action", 500, LocalDate.now());
         doReturn(book).when(bookService).findBook("1234");
-        //in a SPY the bookService.findBook() is actually called on the real bookService, so the test fails
+//        in a SPY the bookService.findBook() is actually called on the real bookService, so the test fails
 //        when(bookService.findBook("1234")).thenReturn(book);
         int actualDiscount = bookManager.applyDiscountOnBook("1234", 10);
         assertEquals(450, actualDiscount);
